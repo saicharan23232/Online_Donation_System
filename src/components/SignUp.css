@@ -1,0 +1,76 @@
+/* UserDashboard.css */
+
+.user-dashboard {
+  font-family: 'Inter', sans-serif;
+  color: #1f2937; /* Tailwind gray-800 */
+  background: linear-gradient(to right, #f8fafc, #eef2f7); /* soft gradient */
+}
+
+/* Scrollbar for campaign list */
+.campaign-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.campaign-scroll::-webkit-scrollbar-thumb {
+  background-color: #3b82f6; /* blue-500 */
+  border-radius: 3px;
+}
+.campaign-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #f1f1f1;
+}
+
+/* Campaign item card hover effect */
+.campaign-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.campaign-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15); /* soft blue shadow */
+}
+
+/* CTA Buttons */
+.button-primary {
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease;
+}
+.button-primary:hover {
+  background-color: #2563eb; /* blue-600 */
+}
+
+.button-secondary {
+  background-color: #facc15; /* yellow-400 */
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease;
+}
+.button-secondary:hover {
+  background-color: #eab308; /* yellow-500 */
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .dashboard-header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .campaign-item h3 {
+    font-size: 1rem;
+  }
+
+  .campaign-item p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard-header h1 {
+    font-size: 2rem;
+  }
+}

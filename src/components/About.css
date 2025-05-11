@@ -1,0 +1,209 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.about-page {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+/* Mission Section */
+.mission-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.mission-section .content {
+  text-align: center;
+}
+
+.mission-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.mission-section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.mission-section .image img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Story Section */
+.story-section {
+  background-color: #ffffff;
+  padding: 2rem 0;
+}
+
+.story-section .content {
+  text-align: center;
+}
+
+.story-section h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.story-section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.story-section .image img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Values Section */
+.values-section {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.values-section h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+.value-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: #007bff;
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.cta-section h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  color: #f9f9f9;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  background-color: #ffc107;
+  color: #333;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-btn:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mission-section,
+  .story-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-section h1,
+  .story-section h2 {
+    font-size: 2rem;
+  }
+
+  .values-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .value-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-btn {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-section h1,
+  .story-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .values-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .value-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .cta-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
